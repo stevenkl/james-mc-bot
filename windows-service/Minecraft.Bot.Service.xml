@@ -1,0 +1,24 @@
+<service>
+  
+  <!-- ID of the service. It should be unique across the Windows system-->
+  <id>minecraft.bot</id>
+  <!-- Display name of the service -->
+  <name>Minecraft Bot</name>
+  <!-- Service description -->
+  <description>James - My Minecraft Bot</description>
+  
+  
+  <env name="NODE_EXE" value="C:\ProgramData\scoop\apps\nodejs\current\node.exe" />
+  <env name="BOT_SCRIPT" value="%BASE%\..\index.js" />
+  
+  
+  <!-- Path to the executable, which should be started -->
+  <executable>%NODE_EXE%</executable>
+  <arguments>%BOT_SCRIPT%</arguments>
+  
+  
+  <log mode="roll" />
+  <logpath>%BASE%\logs</logpath>
+  
+
+</service>

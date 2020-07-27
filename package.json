@@ -1,0 +1,32 @@
+{
+  "name": "james-mc-bot",
+  "version": "0.0.1",
+  "description": "James - My Minecraft Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenkl/james-mc-bot.git"
+  },
+  "keywords": [
+    "minecraft",
+    "bot",
+    "mineflayer"
+  ],
+  "author": "Steven Kleist (stevenkl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenkl/james-mc-bot/issues"
+  },
+  "homepage": "https://github.com/stevenkl/james-mc-bot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "mineflayer": "^2.24.0"
+  },
+  "bot-hooks": [
+    { "name": "chat", "module": "bot.chat" }
+  ]
+}
